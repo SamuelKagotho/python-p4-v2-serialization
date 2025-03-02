@@ -14,6 +14,8 @@ with app.app_context():
     # Delete all rows in the "pets" table
     Pet.query.delete()
 
+    print('seeding!!!')
+
     # Create an empty list
     pets = []
 
@@ -29,3 +31,5 @@ with app.app_context():
 
     # Commit the transaction
     db.session.commit()
+
+    print('seeding complete!!')
